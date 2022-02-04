@@ -2,7 +2,7 @@ import Location from "../src/models/Location";
 import Inviter from "../src/Inviter";
 import Invitee from "../src/models/Invitee";
 
-const filePath = 'tests/input/test_data.txt';
+const filePath = './tests/input/test_data.txt';
 const location = new Location(42.6665921, 23.351723);
 const inviter = new Inviter(location, filePath);
 

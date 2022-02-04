@@ -28,7 +28,7 @@ describe('PartnerParser', () => {
   describe('getPartnersFromFile', () => {
     describe('when correct file is provided', () => {
       it('should return partners array', async function () {
-        const filePath = 'tests/input/test_data.txt';
+        const filePath = './tests/input/test_data.txt';
         const partners = await PartnerParser.getPartnersFromFile(filePath);
         const expected = [{
           "id": 12,
@@ -87,7 +87,7 @@ describe('PartnerParser', () => {
 
     describe('when incorrect file is provided', () => {
       it('should return empty array', async function () {
-        const filePath = 'input/test_data.txt';
+        const filePath = './tests/input/test_data.txt';
         const partners = await PartnerParser.getPartnersFromFile(filePath);
         const expected: Partner[] = [];
         expect(partners).toEqual(expect.arrayContaining(expected));
